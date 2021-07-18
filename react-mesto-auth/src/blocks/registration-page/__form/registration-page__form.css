@@ -1,0 +1,13 @@
+.registration-page__form{
+    margin: 0;
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (max-width: 950px){
+    .registration-page__form{
+        width: 260px;
+    }
+}

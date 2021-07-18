@@ -1,0 +1,10 @@
+.buttons{
+    background-color: transparent;
+    transition: filter .4s;
+}
+
+.buttons:hover{
+    -webkit-filter: opacity(60%);
+    filter: opacity(60%);
+    cursor: pointer;
+}

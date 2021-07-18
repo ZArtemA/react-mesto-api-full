@@ -1,0 +1,14 @@
+.profile__image-place{
+    position: relative;
+    height: 120px;
+    width: 120px;
+    vertical-align: middle;
+    margin-right: 30px;
+    background-color: black;
+}
+@media screen and (max-width: 950px){
+    .profile__image-place{
+    padding: 3.75px 26.25px 3.75px 22.5px;
+    margin: 0 auto;
+    }
+}

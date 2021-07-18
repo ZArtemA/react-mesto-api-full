@@ -1,0 +1,14 @@
+.popup__btn-close {
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: -48.7px;
+    right: -48.7px;
+}
+
+@media screen and (max-width: 950px){
+    .popup__btn-close {
+    top: -49.62px;
+    right: -2.62px;
+    }
+}

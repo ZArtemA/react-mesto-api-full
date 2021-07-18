@@ -1,0 +1,12 @@
+.card__image{
+    width: 282px;
+    height: 282px;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+    background-size: cover;
+    transition: filter .4s;
+}
+.card__image:hover{
+    cursor: pointer;
+    filter: opacity(90%);
+}

@@ -1,0 +1,20 @@
+.popup__registration-answer {
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    margin: 0 auto 50px;
+    width: 358px;
+    line-height: 29px;
+    color: #000000;
+    text-align: center;
+}
+
+@media screen and (max-width: 950px){
+  .popup__registration-answer {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 60px;
+    width: 244px;
+  }
+}

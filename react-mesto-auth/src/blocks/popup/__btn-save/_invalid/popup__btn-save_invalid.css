@@ -1,0 +1,10 @@
+.popup__btn-save_invalid{
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .2);
+    background:#ffffff;
+    transition: background none;
+}
+.popup__btn-save_invalid:hover{
+    cursor: default;
+    background:#ffffff;
+}

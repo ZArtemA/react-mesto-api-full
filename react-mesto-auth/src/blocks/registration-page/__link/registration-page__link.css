@@ -1,0 +1,22 @@
+.registration-page__link {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin: 15px 0 80px;
+  text-decoration: none;
+  text-align: center;
+  transition: filter .4s linear;
+}
+
+.registration-page__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  filter: opacity(60%);
+}
+
+@media screen and (max-width: 950px){
+    .registration-page__link{
+        margin-top: 20px; 
+    }
+}

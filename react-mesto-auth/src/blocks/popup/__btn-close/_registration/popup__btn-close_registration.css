@@ -1,0 +1,8 @@
+
+@media screen and (max-width: 950px){
+    .popup__btn-close_registration {
+    top: -70.41px;
+    right: 50%;
+    margin-right: -18px;
+    }
+}

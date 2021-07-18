@@ -1,0 +1,17 @@
+.registration-page__title {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 900;
+  height: 29px;
+  color: #ffffff;
+  margin: 0 0 50px;
+}
+
+@media screen and (max-width: 950px){
+    .registration-page__title{
+        font-size: 20px;
+        height: 24px;
+        width: auto;
+    }
+}

@@ -1,0 +1,13 @@
+.popup__registration-image {
+    width: 120px;
+    height: 120px;
+    margin: 60px auto 32px;
+    display: block;
+  }
+
+@media screen and (max-width: 950px){
+  .popup__registration-answer {
+    font-size: 18px;
+    margin: 50px auto 40px;
+  }
+}
