@@ -1,0 +1,125 @@
+[33mcommit f0cce4131101fdd5b5ba0118456eb707c8f048e4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Thu Jul 15 21:31:16 2021 +0600
+
+    Пробный коммит
+
+[33mcommit 4caacdc11da8c32a303573875012648cd5f159de[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Thu Jul 15 02:51:03 2021 +0600
+
+    Сделал logger
+
+[33mcommit d1aaa32ca161b6894d3015d25e20fafa33760a3c[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Mon Jul 12 16:21:45 2021 +0600
+
+    Исправил замечания
+
+[33mcommit 7c6c9a1583e68c0e5ed0854741f74eeb2da8d9fa[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Mon Jul 12 05:31:58 2021 +0600
+
+    Настроил валидацию данных
+
+[33mcommit 24165b0090a2501564193ad18239713e8b18fd81[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Mon Jul 12 04:33:01 2021 +0600
+
+    Сделал центральную обработку ошибок
+
+[33mcommit bd39ca58782b673eca81c4b7caa68331eee510db[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Mon Jul 12 00:10:41 2021 +0600
+
+    Исправил ошибки и валидировал аватар
+
+[33mcommit f9b73149a22897d1b9f97fd5366215f44698fe7d[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Sun Jul 11 04:28:09 2021 +0600
+
+    Проект готов
+
+[33mcommit 27cba9ccf786828ba9eeae92451e10b5053799d4[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Sat Jul 10 17:29:22 2021 +0600
+
+    Мидлвар для авторизации, роуты и секретный ключ
+
+[33mcommit 9088c017d376ec762f7ac04d412034056744d93a[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Sat Jul 10 05:21:07 2021 +0600
+
+    Контроллеры login createUser и схема пользователя
+
+[33mcommit feabe84a178d7a61d77584d0ce843e7d63e5fa9b[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Wed Jul 7 21:46:34 2021 +0600
+
+    Убрал лишний consolelog
+
+[33mcommit d34bc6603e07841abed69c7b7f11df6a3f1d3b43[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Wed Jul 7 21:39:59 2021 +0600
+
+    Добавил ошибку валидности id
+
+[33mcommit bed52eec0b77a2f1efbb743095d634d0bc57dc32[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Tue Jul 6 17:42:27 2021 +0600
+
+    Исправил замечания, добавил хелмет и использовал orFail
+
+[33mcommit 1865f9a2232fb79d14d306c7d6faa4e6309f00c8[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Tue Jul 6 01:18:57 2021 +0600
+
+    Сделал статусы ошибок переменными и убрал путаницу
+
+[33mcommit cd46363eb0b1fa22a6bfe02045b4ad4aa6ed140a[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Tue Jul 6 00:01:55 2021 +0600
+
+    Ошибки и исправления
+
+[33mcommit cb600e1f55ab3df1833e88c9ae12c48037c1ec18[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Mon Jul 5 22:13:24 2021 +0600
+
+    Обработал ошибки
+
+[33mcommit 67f9fcabb4c0e1a06fa8d811eca3bdd49bec5d5b[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Mon Jul 5 04:11:33 2021 +0600
+
+    Все роуты и контроллеры работают
+
+[33mcommit d2984f37319d38a8403dac5ee00fe1c400145105[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Sun Jul 4 04:48:11 2021 +0600
+
+    Контроллеры и роутеры пользователя и начало для карточек
+
+[33mcommit 155ee3102e13b596d767fd23a11c5ed9db7a3ec8[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Sat Jul 3 04:38:18 2021 +0600
+
+    Установил все
+
+[33mcommit ae47a544f3c174aab2a90f43423275be3cbef9a3[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Fri Jul 2 19:07:09 2021 +0600
+
+    Все переустановил
+
+[33mcommit 9dfb94e95bfad9106b2102b0705f1fcaaa4cec2f[m
+Author: Artem Zyrianov <mister.zyrianovartyom@yandex.ru>
+Date:   Fri Jul 2 04:44:46 2021 +0600
+
+    Добавил эслинт
+
+[33mcommit 3453bd54a44ef250c56c3d01df943f70a6c72e91[m
+Author: ZArtemA <68057580+ZArtemA@users.noreply.github.com>
+Date:   Thu Jul 1 14:28:13 2021 +0600
+
+    Initial commit
