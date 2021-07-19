@@ -50,6 +50,7 @@ function App() {
   }
 
   React.useEffect(() => {
+    if (loggedIn) {
     Promise.all([
       api.getPersonInfo(),
       api.getInitialCards()
@@ -67,7 +68,8 @@ function App() {
       .catch((error) => {
         console.log(`Ошибка получения данных: ${error}`);
       });
-  }, [])
+    }
+  }, [loggedIn])
 
   function closeAllPopups() {
     setIsEditAvatarPopupOpen(false)
@@ -167,6 +169,7 @@ function App() {
         if (data.token) {
           localStorage.setItem("token", data.token);
           setUserData({ email: email, password: password, })
+          api.updateToken();
           setLoggedIn({
             loggedIn: true
           });
@@ -189,12 +192,13 @@ function App() {
   function tokenCheck() {
     if (localStorage.getItem('token')) {
       const token = localStorage.getItem('token');
+      api.updateToken();
       auth.checkToken(token).then((res) => {
         if (res) {
           setLoggedIn({
             loggedIn: true,
           });
-          setUserData({ email: res.data.email, id: res.data._id });
+          setUserData({ email: res.email, id: res._id });
           history.push("/");
         }
       })
@@ -206,7 +210,7 @@ function App() {
 
   React.useEffect(() => {
     tokenCheck();
-  }, [])
+  }, []);
 
 
   function handleSignOut() {
@@ -241,7 +245,7 @@ function App() {
             <Route path="/sign-in">
               <Login handleLogin={handleLogin} />
             </Route>
-            <Route>
+            <Route path="*">
               {loggedIn ? (<Redirect to="/" />) : (<Redirect to="/sign-in" />)}
             </Route>
           </Switch>

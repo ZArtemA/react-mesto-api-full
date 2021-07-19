@@ -4,10 +4,10 @@ import React from 'react';
 function Card({ card, onCardClick, onCardLike, onCardDelete }) {
 
     const currentUser = React.useContext(CurrentUserContext);
-    const isOwn = card.owner._id === currentUser.id;
+    const isOwn = card.owner === currentUser.id;
     const cardDeleteButtonClassName = `card__btn-delete buttons ${isOwn ? '' : 'card__btn-delete_hidden'}`;
 
-    const isLiked = card.likes.some(i => i._id === currentUser.id);
+    const isLiked = card.likes.some(i => i === currentUser.id);
     const cardLikeButtonClassName = `card__btn-like buttons ${isLiked ? `card__btn-like_active` : ''}`;
 
     function handleClick() {

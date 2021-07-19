@@ -1,8 +1,7 @@
 class Api {
-    constructor({ address, token, groupID }) {
+    constructor({ address, headers }) {
         this._address = address;
-        this._token = token;
-        this._groupID = groupID;
+        this._headers = headers;
         this._getResJson = this._getResJson.bind(this);
     }
 
@@ -22,10 +21,8 @@ class Api {
 
 
     getInitialCards() {
-        return fetch(`${this._address}/v1/${this._groupID}/cards`, {
-            headers: {
-                authorization: this._token
-            }
+        return fetch(`${this._address}/cards`, {
+            headers: this._headers,
         }).then(response => {
             return this._getResJson(response);
         });
@@ -33,12 +30,9 @@ class Api {
 
 
     addCard({ name, link }) {
-        return fetch(`${this._address}/v1/${this._groupID}/cards`, {
+        return fetch(`${this._address}/cards`, {
             method: 'POST',
-            headers: {
-                authorization: this._token,
-                'Content-type': 'application/json'
-            },
+            headers: this._headers,
             body: JSON.stringify({
                 name: name,
                 link: link
@@ -50,11 +44,9 @@ class Api {
     }
 
     removeCard(_id) {
-        return fetch(`${this._address}/v1/${this._groupID}/cards/${_id}`, {
+        return fetch(`${this._address}/cards/${_id}`, {
             method: 'DELETE',
-            headers: {
-                authorization: this._token
-            }
+            headers: this._headers,
         })
             .then(response => {
                 return this._getResData(response);
@@ -63,12 +55,9 @@ class Api {
 
 
     changeLikeCardStatus(_id, isLiked) {
-        return fetch(`${this._address}/v1/${this._groupID}/cards/likes/${_id}`, {
+        return fetch(`${this._address}/cards/${_id}/likes`, {
             method: `${isLiked ? 'PUT' : 'DELETE'}`,
-            headers: {
-                authorization: this._token,
-                'Content-Type': 'application/json'
-            }
+            headers: this._headers,
         })
             .then(response => {
                 return this._getResJson(response);
@@ -78,10 +67,8 @@ class Api {
 
 
     getPersonInfo() {
-        return fetch(`${this._address}/v1/${this._groupID}/users/me`, {
-            headers: {
-                authorization: this._token
-            }
+        return fetch(`${this._address}/users/me`, {
+            headers: this._headers,
         }).then(response => {
             return this._getResJson(response);
         }).then(userInfo => {
@@ -92,12 +79,9 @@ class Api {
 
 
     patchPersonInfo(data) {
-        return fetch(`${this._address}/v1/${this._groupID}/users/me`, {
+        return fetch(`${this._address}/users/me`, {
             method: 'PATCH',
-            headers: {
-                authorization: this._token,
-                'Content-Type': 'application/json'
-            },
+            headers: this._headers,
             body: JSON.stringify({
                 name: data.name,
                 about: data.about
@@ -108,12 +92,9 @@ class Api {
     }
 
     patchAvatar(avatar) {
-        return fetch(`${this._address}/${this._groupID}/users/me/avatar`, {
+        return fetch(`${this._address}/users/me/avatar`, {
             method: 'PATCH',
-            headers: {
-                authorization: this._token,
-                'Content-type': 'application/json'
-            },
+            headers: this._headers,
             body: JSON.stringify({
                 avatar
             })
@@ -121,12 +102,19 @@ class Api {
             return this._getResJson(response);
         });
     }
+
+    updateToken() {
+        this._headers.Authorization = `Bearer ${localStorage.getItem('token')}`
+    }
 }
 
+
 const api = new Api({
-    address: `https://mesto.nomoreparties.co`,
-    token: `f797dee9-663e-4fb3-a082-41f0cffe7621`,
-    groupID: `cohort-22`
+    address: `https://api.bestphotointheworld.nomoredomains.rocks/`,
+    headers: {
+        'Content-type': 'application/json',
+        'Authorization': `Bearer ${localStorage.getItem('token')}`
+      }
 });
 
 export default api;
