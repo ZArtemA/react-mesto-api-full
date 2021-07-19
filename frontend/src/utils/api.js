@@ -110,7 +110,7 @@ class Api {
 
 
 const api = new Api({
-    address: `https://api.bestphotointheworld.nomoredomains.rocks/`,
+    address: `https://api.prettiestphoto.nomoredomains.rocks`,
     headers: {
         'Content-type': 'application/json',
         'Authorization': `Bearer ${localStorage.getItem('token')}`

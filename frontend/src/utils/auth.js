@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://api.bestphotointheworld.nomoredomains.rocks/';
+export const BASE_URL = 'https://api.prettiestphoto.nomoredomains.rocks';
 const headers = {
   Accept: "application/json",
   "Content-Type": "application/json",
